@@ -291,8 +291,8 @@ body {
 .introduction img {
     position: relative;
     margin: 0 auto;
-    height:100%;
-    width:auto;
+    height:100% !important;
+    width:auto !important;
 }
 
 .mask {
