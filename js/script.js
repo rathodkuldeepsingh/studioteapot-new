@@ -182,6 +182,21 @@ $(document).ready(function () {
         removeHash ();
         $(window).scrollTop(0);
     });
+    
+    
+    // bring homw page on back button
+    window.onbeforeunload = function () {
+     window.location.hash="";
+        $('.home-page').css({
+            visibility: 'visible'
+        });
+        $('.introduction, .menu').animate({
+            left: 0
+        }, 1000, 'easeOutQuart');
+        $('.page').fadeOut(800);
+        removeHash ();
+        $(window).scrollTop(0);
+    };
 
     /*  ----------------------------------------
          Tooltip Starter for Social Media Icons
