@@ -12,7 +12,7 @@ $(document).ready(function () {
         var postData 		= $(this).serializeArray(),
             formURL 		= $(this).attr("action"),
             $cfResponse 	= $('#contactFormResponse'),
-            $cfsubmit 		= $("#cfsubmit"),
+            $cfsubmit 		= $("#submit"),
             cfsubmitText 	= $cfsubmit.text();
 
         $cfsubmit.text("Sending...");
